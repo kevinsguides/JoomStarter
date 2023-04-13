@@ -1,0 +1,28 @@
+#ignore everything
+*
+*/
+
+#dont ignore components/com_simplequiz
+!templates
+!templates/j4starter
+!templates/j4starter/**
+
+!media
+!media/templates/site
+!media/templates/site/j4starter
+!media/templates/site/j4starter/**
+
+!language
+!language/en-GB
+!language/en-GB/tpl_j4starter.ini
+!language/en-GB/tpl_j4starter.sys.ini
+
+
+
+
+!.gitignore
+!readme.md
+
+
+
+
