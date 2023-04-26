@@ -45,10 +45,6 @@ $testparam =  $this->params->get('testparam');
 // Get this template's path
 $templatePath = 'templates/' . $this->template;
 
-// Load our frameworks
-JHtml::_('bootstrap.framework');
-JHtml::_('jquery.framework');
-
 //Register our web assets (Css/JS)
 $wa->useStyle('template.j4starter.mainstyles');
 $wa->useStyle('template.j4starter.user');
