@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site" method="upgrade">
 	<name>j4starter</name>
-	<version>1.20</version>
+	<version>1.22</version>
 	<creationDate>April 2023</creationDate>
 	<author>Your Name</author>
 	<authorEmail>Your Email</authorEmail>
-	<copyright>(C) 2022 KG</copyright>
+	<copyright>(C) 2023 KG</copyright>
 	<description>TPL_J4STARTER_XML_DESCRIPTION</description>
 	<inheritable>1</inheritable>
 	<files>
