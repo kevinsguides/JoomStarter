@@ -48,6 +48,8 @@ $templatePath = 'templates/' . $this->template;
 //load bootstrap collapse js (required for mobile menu to work)
 //this loads collapse.min.js from media/vendor/bootstrap/js - you can check out that folder to see what other bootstrap js files are available if you need them
 HTMLHelper::_('bootstrap.collapse');
+//dropdown needed for 2nd level menu items
+HTMLHelper::_('bootstrap.dropdown');
 
 
 //Register our web assets (Css/JS)
