@@ -26,7 +26,7 @@ if ($tagId = $params->get('tag_id', ''))
 //Slight modifications to the menu output to play nicely with Bootstrap
 // The menu class is deprecated. Use mod-menu instead
 ?>
-<ul<?php echo $id; ?> class="navbar-nav  me-auto mb-2 mb-lg-0">
+<ul<?php echo $id; ?> class="navbar-nav me-auto mb-2 mb-lg-0">
 <?php foreach ($list as $i => &$item)
 {
 	$itemParams = $item->getParams();

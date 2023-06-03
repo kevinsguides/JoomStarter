@@ -1,0 +1,196 @@
+// Modifiers
+
+// This com_content section was copied directly from cassiopeia
+// it is required if you want Joomla's blog/feature layouts to support columns
+// Why they didn't just use Bootstrap grid is beyond me
+// You may exclude this file if you don't use columns, or you override the com_content layouts/tmpl with your own column system
+
+
+// Grid columns
+$grid-gutter-width:                   1em !default;
+$cassiopeia-grid-gutter:              $grid-gutter-width !default;
+
+  // com_content
+  .blog-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin-right: -($cassiopeia-grid-gutter * .5);
+    margin-bottom: $cassiopeia-grid-gutter;
+    margin-left: -($cassiopeia-grid-gutter * .5);
+  
+    @include media-breakpoint-up(lg) {
+      &.columns-2 {
+        > div {
+          width: 50%;
+        }
+      }
+  
+      &.columns-3 {
+        > div {
+          width: 33.33333%;
+        }
+      }
+  
+      &.columns-4 {
+        > div {
+          width: 25%;
+        }
+      }
+    }
+  }
+  
+  .blog-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 ($cassiopeia-grid-gutter * .5) $cassiopeia-grid-gutter;
+    overflow: hidden;
+  
+  
+    .item-image {
+      margin-top: 3px;
+      margin-bottom: 15px;
+      overflow: hidden;
+  
+      .boxed & {
+        margin-bottom: 0;
+      }
+  
+      @include media-breakpoint-up(lg) {
+        .image-right & {
+          order: 1;
+        }
+      }
+  
+      .image-bottom & {
+        margin-top: -15px;
+        order: 1;
+      }
+    }
+  
+    .item-content {
+      .image-left & {
+        padding-left: 25px;
+      }
+  
+      .image-right & {
+        padding-right: 25px;
+      }
+    }
+  
+    .image-left &,
+    .image-right & {
+      flex-direction: column;
+  
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        .item-image {
+          flex: 1 0 40%;
+        }
+        .item-content {
+          flex: 1 0 60%;
+        }
+      }
+    }
+  }
+  
+  .article-info {
+    dd {
+      padding: 0;
+    }
+  }
+  
+  @supports (display: grid) {
+    .blog-items {
+      display: grid;
+      margin: 0 0 $cassiopeia-grid-gutter;
+      grid-auto-flow: row;
+      grid-template-columns: 1fr;
+      grid-gap: $cassiopeia-grid-gutter;
+  
+      .blog-item {
+        padding: 0;
+      }
+  
+      &[class^="columns-"],
+      &[class*=" columns-"] {
+        > div {
+          flex: 0 1 auto;
+          width: auto;
+          max-width: none;
+        }
+      }
+  
+      @include media-breakpoint-up(lg) {
+        &.columns-2 {
+          grid-template-columns: 1fr 1fr;
+        }
+  
+        &.columns-3 {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+  
+        &.columns-4 {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+    }
+  }
+  
+  .blog-items {
+  
+    &[class^="masonry-"],
+    &[class*=" masonry-"] {
+      display: block;
+      column-gap: $cassiopeia-grid-gutter;
+  
+      .blog-item {
+        display: inline-flex;
+        margin-bottom: $cassiopeia-grid-gutter;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+  
+    @include media-breakpoint-up(lg) {
+      &.masonry-2 {
+        column-count: 2;
+      }
+  
+      &.masonry-3 {
+        column-count: 3;
+      }
+  
+      &.masonry-4 {
+        column-count: 4;
+      }
+    }
+  }
+  
+  .image-alternate {
+    .blog-item:nth-of-type(2n+1) {
+      .item-image {
+        order: 0;
+      }
+    }
+  
+    &.image-left {
+      .blog-item:nth-of-type(2n+1) {
+        .item-image {
+          margin-right: 0;
+          margin-left: 25px;
+          order: 1;
+        }
+      }
+    }
+  
+    &.image-top {
+      .blog-item:nth-of-type(2n+1) {
+        .item-image {
+          order: 1;
+        }
+      }
+    }
+  }
+  
