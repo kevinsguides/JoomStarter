@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site" method="upgrade">
 	<name>j4starter</name>
-	<version>1.22</version>
-	<creationDate>April 2023</creationDate>
+	<version>1.31</version>
+	<creationDate>June 2023</creationDate>
 	<author>Your Name</author>
 	<authorEmail>Your Email</authorEmail>
 	<copyright>(C) 2023 KG</copyright>
