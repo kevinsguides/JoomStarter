@@ -2,7 +2,7 @@
 
 ![Mockup of file](joomstarter-mockup.webp)
 
-A starter/boilerplate template for Joomla 4 designed to be easily built upon.
+A starter/boilerplate template for Joomla 4 and 5 designed to be easily built upon.
 
 This is a stripped down version of the default Cassiopeia template with extensive comments explaining what nearly every line of code is doing.
 
