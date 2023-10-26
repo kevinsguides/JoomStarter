@@ -1,0 +1,27 @@
+//This is where you can edit your CSS, or better yet, create additional scss files and import them.
+//You can compile this to css using the command: sass template.scss:..\css\template.min.css --style compressed
+
+// Load our local copy of Bootstrap 5.3.2
+@import "vendor/bootstrap-5.3.2/functions";
+@import "vendor/bootstrap-5.3.2/variables";
+@import "vendor/bootstrap-5.3.2/bootstrap";
+
+// Import this file to make columns work in com_content
+@import "_modifiers";
+
+
+//Your Imports Here
+
+
+//Your CSS Here
+
+
+
+
+
+
+//Basic Responsive Images
+img{
+    max-width: 100%;
+    height: auto;
+}

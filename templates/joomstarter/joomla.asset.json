@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "joomstarter",
+  "version": "4.0.0",
+  "description": "This file contains details of the assets used by joomstarter, a modified version of the default cassiopeia template.",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+
+    {
+      "name": "template.joomstarter.mainstyles",
+      "description": "The default css style to use.",
+      "type": "style",
+      "uri": "template.min.css",
+      "dependencies": [
+        "fontawesome"
+      ]
+    },
+    {
+      "name": "template.joomstarter.user",
+      "description": "The custom css style to use. Must be placed in media/templates/site/joomstarter/css/user.css",
+      "type": "style",
+      "uri": "user.css"
+    },
+    {
+      "name": "template.joomstarter.scripts",
+      "description": "The file containing the javascript for this template.",
+      "type": "script",
+      "uri": "template.js",
+      "attributes" : {
+        "defer": true
+      },
+      "dependencies": [
+        "core"
+      ]
+    },
+    {
+      "name": "template.active",
+      "description": "A dummy asset to allow extensions to use it as a dependency to the active template.",
+      "type": "script",
+      "uri": "",
+      "dependencies": [
+        "template.joomstarter.scripts"
+      ]
+    },
+    {
+      "name": "searchtools",
+      "type": "style",
+      "uri": "system/searchtools/searchtools.min.css"
+    },
+    {
+      "name": "fontawesome",
+      "type": "style",
+      "uri": "system/joomla-fontawesome.min.css"
+    }
+  ]
+}
