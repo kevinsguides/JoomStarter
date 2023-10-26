@@ -1,4 +1,5 @@
 # JoomStarter
+## Formerly j4starter
 
 ![Mockup of file](joomstarter-mockup.webp)
 
