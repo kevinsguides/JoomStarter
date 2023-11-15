@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site" method="upgrade">
 	<name>joomstarter</name>
-	<version>1.40</version>
+	<version>1.41</version>
 	<creationDate>Oct 2023</creationDate>
 	<author>Your Name</author>
 	<authorEmail>Your Email</authorEmail>
 	<copyright>(C) 2023 KG</copyright>
 	<description>TPL_joomstarter_XML_DESCRIPTION</description>
 	<inheritable>1</inheritable>
+	<scriptfile>script.php</scriptfile>
 	<files>
 		<filename>index.php</filename>
 		<filename>joomla.asset.json</filename>
