@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="template" client="site" method="upgrade">
 	<name>joomstarter</name>
-	<version>1.41</version>
+	<version>1.42</version>
 	<creationDate>Oct 2023</creationDate>
 	<author>Your Name</author>
 	<authorEmail>Your Email</authorEmail>

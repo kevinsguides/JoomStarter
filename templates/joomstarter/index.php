@@ -117,7 +117,7 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
     </header>
 
     <?php // Generate the main content area of the website ?>
-    <main class="siteBody">
+    <div class="siteBody">
         <div class="container">
         <?php // Load Breadcrumbs Module if Module Exists ?>
             <?php if ($this->countModules('breadcrumbs')) : ?>
@@ -151,7 +151,7 @@ $this->setMetaData('viewport', 'width=device-width, initial-scale=1');
                 <?php endif; ?>
             </div>
         </div>
-    </main>
+    </div>
 
     <?php // Load Footer ?>
     <footer class="footer mt-auto py-3 bg-light ">
